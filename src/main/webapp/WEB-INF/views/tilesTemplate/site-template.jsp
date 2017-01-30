@@ -45,7 +45,7 @@
   <!-- WebSocket JS -->
   <script src="<c:url value = "/resources/dist/js/web_socket/sockjs.min.js" />"></script>
   <script src="<c:url value = "/resources/dist/js/web_socket/stomp.min.js" />"></script>
-  
+
 
 
   <title>
