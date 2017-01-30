@@ -15,7 +15,7 @@
   <div class="row">
     <div class="col-lg-12">
       <div class="table-responsive">
-        <table class="table table-hover table-striped table-bordered" id="rems">
+        <table class="table table-hover table-striped table-bordered" id="rem_list">
           <thead>
             <tr>
               <th></th>
@@ -35,7 +35,7 @@
             </tr>
           </thead>
           <tbody>
-            <c:forEach items="${rems}" var="rem">
+            <c:forEach items="${rem_list}" var="rem">
               <tr id="${rem.id}" class="">
                 <td>
                   <c:out value="${rem.rem_name}"></c:out>
@@ -48,3 +48,6 @@
     </div>
   </div>
 </div>
+
+
+<input id="contextPath" type="hidden" value="${pageContext.request.contextPath}" />
