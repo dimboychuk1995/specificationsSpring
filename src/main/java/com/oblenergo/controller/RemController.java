@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * Created by us9522 on 30.01.2017.
  */
 @Controller
-@RequestMapping("/")
+@RequestMapping("/rem")
 public class RemController {
   private static final String REM_LIST = "rem_list";
 

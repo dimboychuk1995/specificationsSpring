@@ -18,7 +18,7 @@
         <table class="table table-hover table-striped table-bordered" id="rem_list">
           <thead>
             <tr>
-              <th></th>
+              <th>Рем</th>
               <th></th>
               <th></th>
               <th></th>
