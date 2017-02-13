@@ -12,7 +12,8 @@
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   <div class="container-fluid headerAllPage">
     <ul class="nav navbar-nav">
-      <li><img alt="no photo" class="logo" src="<c:url value="/resources/main_logo.jpg" />" >
+      <li>
+        <h1 alt="no photo" class="logo">Технічні умови</h1>
       </li>
     </ul>
 

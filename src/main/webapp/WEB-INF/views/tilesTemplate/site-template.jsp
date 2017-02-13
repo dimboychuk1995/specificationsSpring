@@ -27,6 +27,9 @@
   <!-- Bootstrap toggle CSS -->
   <link href="<c:url value = "/resources/dist/css/toggleBootstrap/bootstrap-toggle.min.css" />" rel="stylesheet">
 
+  <!-- Main css -->
+  <link href="<c:url value = "/resources/dist/css/main.css" />" rel="stylesheet">
+
   <!-- jQuery -->
   <script src="<c:url value = "/resources/dist/js/jquery/jquery.min.js" />"></script>
   <script src="<c:url value = "/resources/dist/js/jquery/jquery.js" />"></script>
@@ -41,9 +44,6 @@
   <!-- Bootstrap Data table js-->
   <script src="<c:url value = "/resources/dist/bootstrap-dataTables/js/jquery.dataTables.min.js" />"></script>
   <script src="<c:url value = "/resources/dist/bootstrap-dataTables/js/dataTables.bootstrap.min.js" />"></script>
-
-  <!-- Main css -->
-  <script src="<c:url value = "/resources/dist/css/main.css" />"></script>
 
 
   <title>

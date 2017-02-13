@@ -4,7 +4,10 @@
 }
 
 .logo{
-    height: 100px;
+    height: 60px;
+    margin-left: 16px;
+    color: #fff;
+    padding-top: 5px;
 }
 
 .marginTop100{

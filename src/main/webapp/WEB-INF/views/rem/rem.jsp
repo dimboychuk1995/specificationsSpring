@@ -27,6 +27,7 @@
               <th>Головний інженер</th>
               <th>Виконавець</th>
               <th>Район</th>
+              <th></th>
             </tr>
           </thead>
           <tbody>
@@ -59,6 +60,24 @@
                 <td>
                   <c:out value="${rem.region}"></c:out>
                 </td>
+                <td class="hidden">
+                  <c:out value="${rem.director_rod}"></c:out>
+                </td>
+                <td class="hidden">
+                  <c:out value="${rem.director_dav}"></c:out>
+                </td>
+                <td class="hidden">
+                  <c:out value="${rem.rek_bank_with_spec}"></c:out>
+                </td>
+                <td class="hidden">
+                  <c:out value="${rem.rek_bank_without_spec}"></c:out>
+                </td>
+                <td class="hidden">
+                  <c:out value="${rem.city_town_village}"></c:out>
+                </td>
+                <td class="no-padding">
+                  <a class="btn btn-primary col-md-12" href=<c:url value="/rem/${rem.id}" />>Редагувати</a>
+                </td>
               </tr>
             </c:forEach>
           </tbody>
@@ -71,4 +90,4 @@
 
 <input id="contextPath" type="hidden" value="${pageContext.request.contextPath}" />
 
-<script src="<c:url value = "/resources/dist/css/rem/rem.css  " />"></script>
+<link href="<c:url value = "/resources/dist/css/rem/rem.css" />" rel="stylesheet">
