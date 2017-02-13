@@ -42,10 +42,8 @@
   <script src="<c:url value = "/resources/dist/bootstrap-dataTables/js/jquery.dataTables.min.js" />"></script>
   <script src="<c:url value = "/resources/dist/bootstrap-dataTables/js/dataTables.bootstrap.min.js" />"></script>
 
-  <!-- WebSocket JS -->
-  <script src="<c:url value = "/resources/dist/js/web_socket/sockjs.min.js" />"></script>
-  <script src="<c:url value = "/resources/dist/js/web_socket/stomp.min.js" />"></script>
-
+  <!-- Main css -->
+  <script src="<c:url value = "/resources/dist/css/main.css" />"></script>
 
 
   <title>

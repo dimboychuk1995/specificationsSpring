@@ -1,9 +1,21 @@
 package com.oblenergo.model;
 
+import org.apache.commons.lang3.builder.EqualsBuilder;
+import org.apache.commons.lang3.builder.HashCodeBuilder;
+import org.apache.commons.lang3.builder.ToStringBuilder;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import java.io.Serializable;
+
 /**
  * Created by us9522 on 27.01.2017.
  */
-public class Rem {
+@Entity
+@Table(name = "rem")
+public class Rem implements Serializable{
 
   private int id;
   private String rem_name;
@@ -21,6 +33,8 @@ public class Rem {
   private String rek_bank_without_spec;
   private String city_town_village;
 
+  @Id
+  @Column(name = "id")
   public int getId() {
     return id;
   }
@@ -29,6 +43,7 @@ public class Rem {
     this.id = id;
   }
 
+  @Column(name = "rem_name")
   public String getRem_name() {
     return rem_name;
   }
@@ -37,6 +52,7 @@ public class Rem {
     this.rem_name = rem_name;
   }
 
+  @Column(name = "director")
   public String getDirector() {
     return director;
   }
@@ -45,6 +61,7 @@ public class Rem {
     this.director = director;
   }
 
+  @Column(name = "contacts")
   public String getContacts() {
     return contacts;
   }
@@ -53,6 +70,7 @@ public class Rem {
     this.contacts = contacts;
   }
 
+  @Column(name = "rek_bank")
   public String getRek_bank() {
     return rek_bank;
   }
@@ -61,6 +79,7 @@ public class Rem {
     this.rek_bank = rek_bank;
   }
 
+  @Column(name = "rem_licality")
   public String getRem_licality() {
     return rem_licality;
   }
@@ -69,6 +88,7 @@ public class Rem {
     this.rem_licality = rem_licality;
   }
 
+  @Column(name = "director_rod")
   public String getDirector_rod() {
     return director_rod;
   }
@@ -77,6 +97,7 @@ public class Rem {
     this.director_rod = director_rod;
   }
 
+  @Column(name = "director_dav")
   public String getDirector_dav() {
     return director_dav;
   }
@@ -85,6 +106,7 @@ public class Rem {
     this.director_dav = director_dav;
   }
 
+  @Column(name = "dovirenist")
   public String getDovirenist() {
     return dovirenist;
   }
@@ -93,6 +115,7 @@ public class Rem {
     this.dovirenist = dovirenist;
   }
 
+  @Column(name = "golovnyi_ingener")
   public String getGolovnyi_ingener() {
     return golovnyi_ingener;
   }
@@ -101,6 +124,7 @@ public class Rem {
     this.golovnyi_ingener = golovnyi_ingener;
   }
 
+  @Column(name = "vykonavets")
   public String getVykonavets() {
     return vykonavets;
   }
@@ -109,6 +133,7 @@ public class Rem {
     this.vykonavets = vykonavets;
   }
 
+  @Column(name = "region")
   public String getRegion() {
     return region;
   }
@@ -117,6 +142,7 @@ public class Rem {
     this.region = region;
   }
 
+  @Column(name = "rek_bank_with_spec")
   public String getRek_bank_with_spec() {
     return rek_bank_with_spec;
   }
@@ -125,6 +151,7 @@ public class Rem {
     this.rek_bank_with_spec = rek_bank_with_spec;
   }
 
+  @Column(name = "rek_bank_without_spec")
   public String getRek_bank_without_spec() {
     return rek_bank_without_spec;
   }
@@ -133,6 +160,7 @@ public class Rem {
     this.rek_bank_without_spec = rek_bank_without_spec;
   }
 
+  @Column(name = "city_town_village")
   public String getCity_town_village() {
     return city_town_village;
   }
@@ -143,24 +171,19 @@ public class Rem {
 
 
 
+
+  @Override
+  public int hashCode() {
+    return HashCodeBuilder.reflectionHashCode(this, true);
+  }
+
+  @Override
+  public boolean equals(Object obj) {
+    return EqualsBuilder.reflectionEquals(this, obj, true);
+  }
+
   @Override
   public String toString() {
-    return "rem{" +
-            "id=" + id +
-            ", rem_name='" + rem_name + '\'' +
-            ", director='" + director + '\'' +
-            ", contacts='" + contacts + '\'' +
-            ", rek_bank='" + rek_bank + '\'' +
-            ", rem_licality='" + rem_licality + '\'' +
-            ", director_rod='" + director_rod + '\'' +
-            ", director_dav='" + director_dav + '\'' +
-            ", dovirenist='" + dovirenist + '\'' +
-            ", golovnyi_ingener='" + golovnyi_ingener + '\'' +
-            ", vykonavets='" + vykonavets + '\'' +
-            ", region='" + region + '\'' +
-            ", rek_bank_with_spec='" + rek_bank_with_spec + '\'' +
-            ", rek_bank_without_spec='" + rek_bank_without_spec + '\'' +
-            ", city_town_village='" + city_town_village + '\'' +
-            '}';
+    return ToStringBuilder.reflectionToString(this);
   }
 }

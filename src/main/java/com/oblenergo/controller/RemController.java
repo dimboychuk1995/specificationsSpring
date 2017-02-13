@@ -23,9 +23,10 @@ public class RemController {
   private RemService remServiceImpl;
 
 
-  @RequestMapping(value = "/", method = RequestMethod.GET)
+  @RequestMapping(method = RequestMethod.GET)
   public String getRemPage(@ModelAttribute("rem_list") Rem rem, Model model){
     model.addAttribute(REM_LIST, remServiceImpl.findAll());
+    System.out.println(remServiceImpl.findAll());
     return "rem";
   }
 }

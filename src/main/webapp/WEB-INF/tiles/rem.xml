@@ -4,7 +4,7 @@
 <tiles-definitions>
 
     <definition name="rem" extends="DefaultTemplate">
-        <put-attribute name="title" value="Rem" />
+        <put-attribute name="title" value="Список ремів" />
         <put-attribute name="body" value="/WEB-INF/views/rem/rem.jsp" />
     </definition>
 

@@ -25,7 +25,7 @@ public class RemDaoImpl extends AbstractDao<Integer, Rem> implements RemDao {
   @Override
   public List<Rem> findAllItems(){
     Criteria crit = createEntityCriteria();
-    crit.addOrder(Order.desc("id"));
+    crit.addOrder(Order.asc("id"));
     return (List<Rem>) crit.list();
   }
 

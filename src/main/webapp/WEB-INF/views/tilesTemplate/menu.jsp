@@ -10,7 +10,7 @@
 <%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags"%>
 
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-  <div class="container-fluid">
+  <div class="container-fluid headerAllPage">
     <ul class="nav navbar-nav">
       <li><img alt="no photo" class="logo" src="<c:url value="/resources/main_logo.jpg" />" >
       </li>
