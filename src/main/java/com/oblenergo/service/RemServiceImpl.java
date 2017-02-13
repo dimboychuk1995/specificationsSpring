@@ -42,17 +42,32 @@ public class RemServiceImpl implements RemService {
     }
   }
 
+  @Transactional
   @Override
   public void update(Rem rem) {
     try {
       Rem entity = dao.findById(rem.getId());
-      entity.setRem_name(rem.getRem_name());
+      //entity.setRem_name(rem.getRem_name());
+      entity.setDirector(rem.getDirector());
+      entity.setContacts(rem.getContacts());
+      entity.setRek_bank(rem.getRek_bank());
+      entity.setRem_licality(rem.getRem_licality());
+      entity.setDirector_rod(rem.getDirector_rod());
+      entity.setDirector_dav(rem.getDirector_dav());
+      entity.setDovirenist(rem.getDovirenist());
+      entity.setGolovnyi_ingener(rem.getGolovnyi_ingener());
+      entity.setVykonavets(rem.getVykonavets());
+      entity.setRegion(rem.getRegion());
+      entity.setRek_bank_with_spec(rem.getRek_bank_with_spec());
+      entity.setRek_bank_without_spec(rem.getRek_bank_without_spec());
+      entity.setCity_town_village(rem.getCity_town_village());
     }catch (DataAccessException dae){
       LOGGER.error("Unable to find rem with id" + rem.getId(), dae);
       throw dae;
     }
   }
 
+  @Transactional
   @Override
   public Rem findRemById(int id) {
     try {
@@ -63,6 +78,7 @@ public class RemServiceImpl implements RemService {
     }
   }
 
+  @Transactional
   @Override
   public void delete(int id) {
     try {
