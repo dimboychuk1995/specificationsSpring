@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * Created by us9522 on 30.01.2017.
  */
 @Controller
-@RequestMapping("/rem")
+@RequestMapping("/")
 public class RemController {
   private static final String REM_LIST = "rem_list";
 
@@ -22,6 +22,7 @@ public class RemController {
 
   @RequestMapping(method = RequestMethod.GET)
   public String getRemPage(@Validated @ModelAttribute("rem_list") Model model){
+    System.out.println("I was here");
     model.addAttribute(REM_LIST, remServiceImpl.findAll());
     System.out.println("I was here");
     return "rem";
