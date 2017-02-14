@@ -19,7 +19,7 @@ public interface RemDao {
 
   List<Rem> findAllItems();
 
-  void save(Rem car);
+  void save(Rem rem);
 
   void delete(int id);
 }
