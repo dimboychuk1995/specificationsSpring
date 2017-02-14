@@ -10,6 +10,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
+
   <!-- Bootstrap -->
   <link href="<c:url value = "/resources/dist/css/bootstrap/bootstrap.css" />" rel="stylesheet">
   <link href="<c:url value = "/resources/dist/css/bootstrap/bootstrap.min.css" />" rel="stylesheet">
@@ -20,6 +22,8 @@
   <!-- Datepicker CSS -->
   <link href="<c:url value = "/resources/dist/css/dateTimePicker/bootstrap-datepicker.css" />" rel="stylesheet">
 
+  <!-- Main CSS -->
+  <link href="<c:url value = "/resources/dist/css/main.css" />" rel="stylesheet">
 
   <!-- jQuery CSS -->
   <link href="<c:url value = "/resources/dist/css/jquery/jquery-ui.css" />" rel="stylesheet">
@@ -45,6 +49,13 @@
   <script src="<c:url value = "/resources/dist/bootstrap-dataTables/js/jquery.dataTables.min.js" />"></script>
   <script src="<c:url value = "/resources/dist/bootstrap-dataTables/js/dataTables.bootstrap.min.js" />"></script>
 
+  <!-- WebSocket JS -->
+  <script src="<c:url value = "/resources/dist/js/web_socket/sockjs.min.js" />"></script>
+  <script src="<c:url value = "/resources/dist/js/web_socket/stomp.min.js" />"></script>
+
+  <!-- Bootstrap toggle JS -->
+  <script src="<c:url value = "/resources/js/toggleBootstrap/bootstrap-toggle.min.js"/>"></script>
+  <script src="<c:url value = "/resources/js/toggleBootstrap/workTypeToggle.js"/>"></script>
 
   <title>
     <tiles:insertAttribute name="title" ignore="true" />

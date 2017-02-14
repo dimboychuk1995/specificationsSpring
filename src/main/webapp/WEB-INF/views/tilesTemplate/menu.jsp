@@ -15,6 +15,9 @@
       <li>
         <h1 alt="no photo" class="logo">Технічні умови</h1>
       </li>
+      <li>
+
+      </li>
     </ul>
 
   </div>

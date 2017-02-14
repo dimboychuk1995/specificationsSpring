@@ -14,7 +14,7 @@ import java.io.Serializable;
  * Created by us9522 on 27.01.2017.
  */
 @Entity
-@Table(name = "rem")
+@Table(name = "DIRECTORY_rem")
 public class Rem implements Serializable{
 
   private int id;
