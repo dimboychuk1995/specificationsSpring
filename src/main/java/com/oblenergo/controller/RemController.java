@@ -44,10 +44,10 @@ public class RemController {
                           Model model){
     if(bindingResult.hasErrors()){
       model.addAttribute(REM_LIST, remServiceImpl.findAll());
-      return "rem";
+      return "updateRem";
     }
 
-    remServiceImpl.save(rem);
-    return "rem";
+    remServiceImpl.update(rem);
+    return "redirect:/";
   }
 }

@@ -19,41 +19,47 @@
           <label>Директор</label>
           <form:input type="text" path="director" class="form-control" cssErrorClass=""/>
 
-          <label>Директор</label>
+          <label>Телфон</label>
           <form:input type="text" path="contacts" class="form-control" cssErrorClass=""/>
 
-          <label>Директор</label>
+          <label>Банківські реквізити</label>
           <form:input type="text" path="rek_bank" class="form-control" cssErrorClass=""/>
 
-          <label>Директор</label>
+          <label>Адреса</label>
           <form:input type="text" path="rem_licality" class="form-control" cssErrorClass=""/>
 
-          <label>Директор</label>
+          <label>Директор(РОДОВИЙ)</label>
           <form:input type="text" path="director_rod" class="form-control" cssErrorClass=""/>
 
-          <label>Директор</label>
+          <label>Директор(ДАВАЛЬНИЙ)</label>
           <form:input type="text" path="director_dav" class="form-control" cssErrorClass=""/>
 
-          <label>Директор</label>
+          <label>Доручення</label>
           <form:input type="text" path="dovirenist" class="form-control" cssErrorClass=""/>
 
-          <label>Директор</label>
+          <label>Головний інженер</label>
           <form:input type="text" path="golovnyi_ingener" class="form-control" cssErrorClass=""/>
 
-          <label>Директор</label>
+          <label>Виконавець</label>
           <form:input type="text" path="vykonavets" class="form-control" cssErrorClass=""/>
 
-          <label>Директор</label>
+          <label>Район</label>
           <form:input type="text" path="region" class="form-control" cssErrorClass=""/>
 
-          <label>Директор</label>
+          <label>Реквізити</label>
           <form:input type="text" path="rek_bank_with_spec" class="form-control" cssErrorClass=""/>
 
-          <label>Директор</label>
+          <label>Реквізити</label>
           <form:input type="text" path="rek_bank_without_spec" class="form-control" cssErrorClass=""/>
 
-          <label>Директор</label>
+          <label>Населений пункт</label>
           <form:input type="text" path="city_town_village" class="form-control" cssErrorClass=""/>
+
+          <button id="sendForm" type="submit" class="btn btn-success pull-down">Зберегти
+            <span class="glyphicon glyphicon-ok"></span>
+          </button>
+
+          <a href=<c:url value="/" /> class="btn btn-default pull-down">Назад</a>
 
         </fieldset>
       </form:form>

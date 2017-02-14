@@ -1,16 +1,33 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: us9522
-  Date: 30.01.2017
-  Time: 8:30
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<!DOCTYPE HTML>
 <html>
+
 <head>
-    <title>Тут може бути ваша помилка</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Error</title>
+    <link href=<c:url value="/resources/dist/css/error-style.css" /> rel="stylesheet" type="text/css" media="all" />
 </head>
+
 <body>
-    <h1>Ти шо, Ідіот???</h1>
+<div class="wrap">
+    <div class="header">
+        <div class="logo">
+            <h1>
+                Щось пішло не так
+            </h1>
+        </div>
+    </div>
+    <div class="content">
+        <img src=<c:url value="/resources/error.gif" /> title="error" />
+        <p>
+            <span>У програміста або у вас(скоріше у вас) криві руки</span>Зверніться до адміністратора або повторіть спробу.
+        </p>
+        <a href="#" onclick="window.history.back();">Назад</a>
+        <a href=<c:url value="/" />>Початкова сторінка</a>
+    </div>
+</div>
 </body>
+
 </html>
