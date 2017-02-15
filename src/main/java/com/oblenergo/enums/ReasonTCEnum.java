@@ -6,7 +6,12 @@ package com.oblenergo.enums;
 public enum ReasonTCEnum {
 
   NEWCONSTRUCTION("нове будівництво"),
-  MOREPOWER("збільшення потужності");
+  MOREPOWER("збільшення потужності"),
+  CHANGEPOINT("зміна точки приєднання"),
+  CHANGECATEGORY("зміна категорії приєднання"),
+  MODERNISATION("модернізація"),
+  RECONSTRUCTION("реконструкція");
+
 
   String reasonTC;
 

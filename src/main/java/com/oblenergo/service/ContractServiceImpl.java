@@ -39,9 +39,15 @@ public class ContractServiceImpl implements ContractService {
     }
   }
 
+  @Transactional
   @Override
   public void update(Contract contract) {
-
+    try{
+      Contract entity = dao.findById(contract.getId());
+    }catch (DataAccessException dae){
+      LOGGER.error("Unable to update rem");
+      throw dae;
+    }
   }
 
   @Override
