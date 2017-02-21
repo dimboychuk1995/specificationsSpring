@@ -2,10 +2,7 @@ package com.oblenergo.model;
 
 import com.oblenergo.enums.*;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.io.Serializable;
 
 /**
@@ -41,12 +38,99 @@ public class Contract implements Serializable {
 
   @Id
   @Column(name = "id")
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
   public int getId() {
     return id;
   }
 
+  @ManyToOne(optional = false)
+  @JoinColumn(name = "rem", referencedColumnName = "id")
+  public Rem getRem(){ return rem; }
 
+  @Enumerated(EnumType.STRING)
+  @Column(name = "typeContract")
+  public TypeContractEnum getTypeContract(){ return typeContract; }
 
+  @Enumerated(EnumType.STRING)
+  @Column(name = "typeJoin")
+  public TypeJoinEnum getTypeJoin(){ return typeJoin; }
+
+  @Enumerated(EnumType.STRING)
+  @Column(name = "customerType")
+  public CustomerTypeEnum getCustomerType(){ return customerType; }
+
+  @Enumerated(EnumType.STRING)
+  @Column(name = "stageJoin")
+  public StageJoinEnum getStageJoin(){ return stageJoin; }
+
+  @Column(name = "registration_date")
+  public String getRegistration_date() {
+    return registration_date;
+  }
+
+  @Column(name = "fName")
+  public String getfName() {
+    return fName;
+  }
+
+  @Column(name = "sName")
+  public String getsName() {
+    return sName;
+  }
+
+  @Column(name = "tName")
+  public String gettName() {
+    return tName;
+  }
+
+  @Column(name = "customer_post")
+  public String getCustomer_post() {
+    return customer_post;
+  }
+
+  @Enumerated(EnumType.STRING)
+  @Column(name = "constitutiveDocuments")
+  public ConstitutiveDocumentsEnum getConstitutiveDocuments(){ return constitutiveDocuments; }
+
+  @Column(name = "bank_account")
+  public String getBank_account() {
+    return bank_account;
+  }
+
+  @Column(name = "bank_mfo")
+  public String getBank_mfo() {
+    return bank_mfo;
+  }
+
+  @Column(name = "bank_identification_number")
+  public String getBank_identification_number() {
+    return bank_identification_number;
+  }
+
+  @Column(name = "taxpayer")
+  public String getTaxpayer() {
+    return taxpayer;
+  }
+
+  @Column(name = "customer_locality")
+  public String getCustomer_locality() {
+    return customer_locality;
+  }
+
+  @Column(name = "customer_adress")
+  public String getCustomer_adress() {
+    return customer_adress;
+  }
+
+  @Column(name = "customer_telephone")
+  public String getCustomer_telephone() {
+    return customer_telephone;
+  }
+
+  @Column(name = "customer_zipcode")
+  public String getCustomer_zipcode() {
+    return customer_zipcode;
+  }
 
   public void setId(int id) {
     this.id = id;
