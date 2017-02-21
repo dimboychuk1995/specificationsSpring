@@ -5,6 +5,7 @@ package com.oblenergo.enums;
  */
 public enum TypeJoinEnum {
 
+  NOTFULL("-"),
   STANDART("стандартне"),
   NONSTANDART("нестандартне"),
   TECHNICALREQUIREMENTS("технічні вимоги");

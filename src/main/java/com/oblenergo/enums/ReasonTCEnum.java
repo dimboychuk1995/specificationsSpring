@@ -13,7 +13,7 @@ public enum ReasonTCEnum {
   RECONSTRUCTION("реконструкція");
 
 
-  String reasonTC;
+  private String reasonTC;
 
   private ReasonTCEnum(String reasonTC){ this.reasonTC = reasonTC; }
 

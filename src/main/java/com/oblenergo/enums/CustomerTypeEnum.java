@@ -5,6 +5,7 @@ package com.oblenergo.enums;
  */
 public enum  CustomerTypeEnum {
 
+  NOTFULL("-"),
   LAWCONSUMER("Юридичний споживач"),
   URIDICALCONSUMER("Побутовий споживач");
 

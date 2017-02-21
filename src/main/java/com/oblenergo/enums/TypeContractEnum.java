@@ -5,6 +5,7 @@ package com.oblenergo.enums;
  */
 public enum TypeContractEnum {
 
+  NOTFULL("-"),
   BASIC("основний"),
   BUILDINGSITE("будмайданчик");
 
