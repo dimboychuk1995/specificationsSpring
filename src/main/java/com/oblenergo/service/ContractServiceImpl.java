@@ -52,11 +52,21 @@ public class ContractServiceImpl implements ContractService {
 
   @Override
   public Contract findContractById(int id) {
-    return null;
+    try {
+      return dao.findById(id);
+    }catch (DataAccessException dae){
+      LOGGER.error("Unable to find contract with id" + id, dae);
+      throw dae;
+    }
   }
 
   @Override
   public void delete(int id) {
-
+    try {
+      dao.delete(id);
+    }catch (DataAccessException dae){
+      LOGGER.error("Unable to delete contract from DB with id : " + id, dae);
+      throw dae;
+    }
   }
 }
