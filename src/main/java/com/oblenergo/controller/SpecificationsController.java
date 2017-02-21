@@ -1,11 +1,15 @@
 package com.oblenergo.controller;
 
+import com.oblenergo.editor.RemEditor;
 import com.oblenergo.model.Contract;
+import com.oblenergo.model.Rem;
 import com.oblenergo.service.ContractService;
 import com.oblenergo.service.RemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.WebDataBinder;
+import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -27,6 +31,14 @@ public class SpecificationsController {
 
   @Autowired
   private RemService remServiceImpl;
+
+  @Autowired
+  private RemEditor remEditor;
+
+  @InitBinder("contract")
+  public void initBinderContract(WebDataBinder binder){
+    binder.registerCustomEditor(Rem.class, remEditor);
+  }
 
   @RequestMapping(method = RequestMethod.GET)
   public String getContractPage(@ModelAttribute("contract_list")Contract contract, Model model){
