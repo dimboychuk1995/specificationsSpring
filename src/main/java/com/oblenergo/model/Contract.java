@@ -15,6 +15,7 @@ public class Contract implements Serializable {
 
   private int id;
 
+
   @Id
   @Column(name = "id")
   public int getId() {

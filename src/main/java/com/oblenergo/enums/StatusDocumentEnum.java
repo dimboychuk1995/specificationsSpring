@@ -5,10 +5,20 @@ package com.oblenergo.enums;
  */
 public enum StatusDocumentEnum {
 
-  CLEAR(""),
+  CLEAR("не виданий"),
   PUBLISHED("виданий"),
-
-
+  NOTCONCLUDED("не укладений"),
+  CUSTOMERREFUSESIGNING("відмова замовника від укладення"),
+  CONCLUDED("укладений"),
+  EXPIRED("втратив чиність"),
+  EXTENDED("продовжений"),
+  RUPTURED("розірваний"),
+  DONE("виконано"),
+  FAILED("не виконано"),
+  THREECOPIES("три примірника"),
+  CHANGED("змінений"),
+  REMTRANFERRED("передано у РЕМ"),
+  REFUSALTOOBTAININGSPECIFICATIONS("відмова у отриманні ТУ");
 
   private String statusDocument;
 
