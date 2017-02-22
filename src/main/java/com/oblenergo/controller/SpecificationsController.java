@@ -9,10 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.WebDataBinder;
-import org.springframework.web.bind.annotation.InitBinder;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
 
 
 @Controller
@@ -41,8 +38,15 @@ public class SpecificationsController {
   public String getContractPage(@ModelAttribute("contract_list")Contract contract, Model model){
     model.addAttribute(REM_LIST, remServiceImpl.findAll());
     model.addAttribute(CONTRACT_LIST, contractServiceImpl.findAll());
-    model.addAttribute(CONTRACT, new Contract());
 
     return "specifications";
+  }
+
+  @RequestMapping(value = "/contract/{id}", method = RequestMethod.GET)
+  public String getContractById(@PathVariable int id, Model model){
+    model.addAttribute(REM_LIST, remServiceImpl.findAll());
+    model.addAttribute(CONTRACT, contractServiceImpl.findContractById(id));
+
+    return "updateSpecifications";
   }
 }

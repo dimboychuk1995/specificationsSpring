@@ -52,6 +52,7 @@ public class ContractServiceImpl implements ContractService {
     }
   }
 
+  @Transactional
   @Override
   public Contract findContractById(int id) {
     try {
@@ -62,6 +63,7 @@ public class ContractServiceImpl implements ContractService {
     }
   }
 
+  @Transactional
   @Override
   public void delete(int id) {
     try {

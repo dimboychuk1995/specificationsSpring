@@ -18,13 +18,35 @@
         <table class="table table-hover table-striped table-bordered" id="contract_list">
           <thead>
             <tr>
-
+              <th>Редагувати</th>
+              <th>Рем</th>
+              <th>Прізвище</th>
+              <th>Ім'я</th>
+              <th>По батькові</th>
+              <th>Телефон</th>
             </tr>
           </thead>
           <tbody>
             <c:forEach items="${contract_list}" var="contract">
-              <tr id="#{contract.id}" class="">
-
+              <tr id="${contract.id}" class="">
+                <td>
+                  <a class="glyphicon glyphicon-edit" href=<c:url value="/specifications/contract/${contract.id}"/>></a>
+                </td>
+                <td>
+                  <c:out value="${contract.rem.rem_name}"></c:out>
+                </td>
+                <td>
+                  <c:out value="${contract.sName}"></c:out>
+                </td>
+                <td>
+                  <c:out value="${contract.fName}"></c:out>
+                </td>
+                <td>
+                  <c:out value="${contract.tName}"></c:out>
+                </td>
+                <td>
+                  <c:out value="${contract.customer_telephone}"></c:out>
+                </td>
               </tr>
             </c:forEach>
           </tbody>
