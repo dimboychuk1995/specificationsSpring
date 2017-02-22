@@ -5,12 +5,14 @@ import com.oblenergo.model.Contract;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 /**
  * Created by us9522 on 14.02.2017.
  */
+@Service
 public class ContractServiceImpl implements ContractService {
   Logger LOGGER = Logger.getLogger(ContractServiceImpl.class);
 

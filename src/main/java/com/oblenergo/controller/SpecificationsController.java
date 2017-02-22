@@ -14,12 +14,9 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-/**
- * Created by us9522 on 21.02.2017.
- */
 
 @Controller
-@RequestMapping("/specifications")
+@RequestMapping(value = "/specifications")
 public class SpecificationsController {
 
   private static final String CONTRACT_LIST = "contract_list";
@@ -45,6 +42,7 @@ public class SpecificationsController {
     System.err.println("I'm here");
     model.addAttribute(REM_LIST, remServiceImpl.findAll());
     model.addAttribute(CONTRACT_LIST, contractServiceImpl.findAll());
+    model.addAttribute(CONTRACT, new Contract());
 
     return "specifications";
   }
