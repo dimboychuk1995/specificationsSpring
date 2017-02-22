@@ -39,7 +39,6 @@ public class SpecificationsController {
 
   @RequestMapping(method = RequestMethod.GET)
   public String getContractPage(@ModelAttribute("contract_list")Contract contract, Model model){
-    System.err.println("I'm here");
     model.addAttribute(REM_LIST, remServiceImpl.findAll());
     model.addAttribute(CONTRACT_LIST, contractServiceImpl.findAll());
     model.addAttribute(CONTRACT, new Contract());

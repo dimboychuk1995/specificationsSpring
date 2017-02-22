@@ -18,7 +18,7 @@ public class Contract implements Serializable {
   private TypeJoinEnum typeJoin = TypeJoinEnum.valueOf("NOTFULL");
   private CustomerTypeEnum customerType = CustomerTypeEnum.valueOf("NOTFULL");
   private StageJoinEnum stageJoin = StageJoinEnum.valueOf("NOTFULL");
-  private String registration_date;
+  private String registrationDate;
   private String fName;
   private String sName;
   private String tName;
@@ -63,9 +63,9 @@ public class Contract implements Serializable {
   @Column(name = "stageJoin")
   public StageJoinEnum getStageJoin(){ return stageJoin; }
 
-  @Column(name = "registration_date")
-  public String getRegistration_date() {
-    return registration_date;
+  @Column(name = "registrationDate")
+  public String getRegistrationDate() {
+    return registrationDate;
   }
 
   @Column(name = "fName")
@@ -156,8 +156,8 @@ public class Contract implements Serializable {
     this.stageJoin = stageJoin;
   }
 
-  public void setRegistration_date(String registration_date) {
-    this.registration_date = registration_date;
+  public void setRegistrationDate(String registrationDate) {
+    this.registrationDate = registrationDate;
   }
 
   public void setfName(String fName) {
