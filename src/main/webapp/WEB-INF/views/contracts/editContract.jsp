@@ -12,13 +12,14 @@
 
 <div class="container-fluid marginTop100">
   <div class="row">
+    <a href=<c:url value="/specifications"/> class="btn btn-default pull-down">Назад</a>
     <h3 class="pull-down col-md-12 text-center">Редагування даних по договору ТУ</h3>
   </div>
 
   <div class="row">
     <div class="col-lg-2">
       <ul class="nav nav-tabs nav-stacked nav-pills">
-        <li class="active"><a data-toggle="tab" href="#home">Замовник</a></li>
+        <li class="active"><a data-toggle="tab" href="#customer">Замовник</a></li>
         <li><a data-toggle="tab" href="#menu1">Дані про об'єкт</a></li>
         <li><a data-toggle="tab" href="#menu2">Вимоги ТУ</a></li>
         <li><a data-toggle="tab" href="#menu2">Технічні умови № Договір</a></li>
@@ -37,9 +38,34 @@
     </div>
     <div class="col-lg-10">
       <div class="tab-content">
-        <div id="home" class="tab-pane fade in active">
-          <h3>HOME</h3>
-          <p>Some content.</p>
+        <div id="customer" class="tab-pane fade in active">
+          <div class="row">
+            <div class="col-md-8">
+              <form:form action="" method="post" modelAttribute="contract" class="form-group pull-down">
+                <fieldset>
+
+                  <label>Соціальний статус</label>
+                  <form:input type="text" path="" class="form-control" cssErrorClass=""/>
+
+                  <label>Споживач</label>
+                  <form:select path="customerType" items="${CustomerTypeEnum}" itemLabel="customerType" class="form-control" cssErrorClass=""/>
+
+                  <label>Тип договору</label>
+                  <form:select path="typeContract" items="${TypeContractEnum}" itemLabel="typeContract" class="form-control" cssErrorClass=""/>
+
+                  <label>Тип приєднання</label>
+                  <form:select path="typeJoin" items="${TypeJoinEnum}" itemLabel="typeJoin" class="form-control" cssErrorClass=""/>
+
+                  <label>Ступінь приєднання</label>
+                  <form:select path="stageJoin" items="${StageJoinEnum}" itemLabel="stageJoin" class="form-control" cssErrorClass=""/>
+
+                  <label>Дата реєстрації в РЕМ</label>
+                  <form:input type="text" path="" class="form-control" cssErrorClass=""/>
+
+                </fieldset>
+              </form:form>
+            </div>
+          </div>
         </div>
         <div id="menu1" class="tab-pane fade">
           <h3>Menu 1</h3>
