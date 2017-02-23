@@ -31,6 +31,9 @@
   <!-- Bootstrap toggle CSS -->
   <link href="<c:url value = "/resources/dist/css/toggleBootstrap/bootstrap-toggle.min.css" />" rel="stylesheet">
 
+  <!-- Bootstrap-datepicker -->
+  <link href="<c:url value = "/resources/dist/css/datepicker/datepicker.css" />" rel="stylesheet">
+
   <!-- Main css -->
   <link href="<c:url value = "/resources/dist/css/main.css" />" rel="stylesheet">
 
@@ -40,6 +43,8 @@
   <script src="<c:url value = "/resources/dist/js/jquery/jquery-ui.js" />"></script>
 
 
+  <!-- Bootstrap-datepicker -->
+  <script src="<c:url value = "/resources/dist/js/datepicker/bootstrap-datepicker.js" />"></script>
 
   <!-- Bootstrap JS -->
   <script src="<c:url value = "/resources/dist/js/bootstrap/bootstrap.min.js" />"></script>
@@ -70,6 +75,17 @@
 <div id="">
   <tiles:insertAttribute name="body" />
 </div>
+
+<script type="text/javascript">
+  // When the document is ready
+  $(document).ready(function () {
+
+    $('#mainDatepicker').datepicker({
+      format: "dd-mm-yyyy"
+    });
+
+  });
+</script>
 
 </body>
 

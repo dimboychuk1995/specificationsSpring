@@ -60,7 +60,7 @@
                   <form:select path="stageJoin" items="${StageJoinEnum}" itemLabel="stageJoin" class="form-control" cssErrorClass=""/>
 
                   <label>Дата реєстрації в РЕМ</label>
-                  <form:input type="text" path="" class="form-control" cssErrorClass=""/>
+                  <form:input type="text" path="" placeholder="click to show datepicker" id="mainDatepicker" class="form-control" cssErrorClass=""/>
 
                 </fieldset>
               </form:form>
