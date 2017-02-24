@@ -60,7 +60,18 @@
                   <form:select path="stageJoin" items="${StageJoinEnum}" itemLabel="stageJoin" class="form-control" cssErrorClass=""/>
 
                   <label>Дата реєстрації в РЕМ</label>
-                  <form:input type="text" path="" placeholder="click to show datepicker" id="mainDatepicker" class="form-control" cssErrorClass=""/>
+                  <form:input type="text" path="registrationDate" placeholder="click to show datepicker" id="mainDatepicker" class="form-control" cssErrorClass=""/>
+
+                  <label>ПІП</label>
+                  <form:input type="text" path="sName" class="form-control" cssErrorClass=""/>
+                  <form:input type="text" path="fName" class="form-control" cssErrorClass=""/>
+                  <form:input type="text" path="tName" class="form-control" cssErrorClass=""/>
+
+                  <label>Посада керівника</label>
+                  <form:input type="text" path="customer_post" class="form-control" cssErrorClass=""/>
+
+                  <label>Установчий документ</label>
+                  <form:select path="constitutiveDocuments" items="${ConstitutiveDocumentsEnum}" itemLabel="constitutiveDocuments" class="form-control" cssErrorClass=""/>
 
                 </fieldset>
               </form:form>

@@ -81,7 +81,7 @@
   $(document).ready(function () {
 
     $('#mainDatepicker').datepicker({
-      format: "dd-mm-yyyy"
+      format: "yyyy-mm-dd"
     });
 
   });
