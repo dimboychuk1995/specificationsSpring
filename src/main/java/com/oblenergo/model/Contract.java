@@ -14,6 +14,7 @@ public class Contract implements Serializable {
 
   private int id;
   private Rem rem;
+  private CustomerSocStatusEnum customerSocStatus = CustomerSocStatusEnum.valueOf("NOTFULL");
   private TypeContractEnum typeContract = TypeContractEnum.valueOf("NOTFULL");
   private TypeJoinEnum typeJoin = TypeJoinEnum.valueOf("NOTFULL");
   private CustomerTypeEnum customerType = CustomerTypeEnum.valueOf("NOTFULL");
@@ -46,6 +47,10 @@ public class Contract implements Serializable {
   @ManyToOne(optional = false)
   @JoinColumn(name = "rem", referencedColumnName = "id")
   public Rem getRem(){ return rem; }
+
+  @Enumerated(EnumType.STRING)
+  @Column(name = "customerSocStatus")
+  public CustomerSocStatusEnum getCustomerSocStatus(){ return customerSocStatus; }
 
   @Enumerated(EnumType.STRING)
   @Column(name = "typeContract")
@@ -138,6 +143,8 @@ public class Contract implements Serializable {
   public void setRem(Rem rem) {
     this.rem = rem;
   }
+
+  public void setCustomerSocStatus(CustomerSocStatusEnum customerSocStatus){ this.customerSocStatus = customerSocStatus; }
 
   public void setTypeContract(TypeContractEnum typeContract) {
     this.typeContract = typeContract;

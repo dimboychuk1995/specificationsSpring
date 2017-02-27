@@ -13,3 +13,9 @@
 .marginTop100{
     margin-top: 100px;
 }
+
+.form-control {
+    display: block;
+    width: 70%;
+    height: 30px;
+}

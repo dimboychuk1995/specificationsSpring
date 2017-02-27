@@ -1,10 +1,7 @@
 package com.oblenergo.controller;
 
 import com.oblenergo.editor.RemEditor;
-import com.oblenergo.enums.CustomerTypeEnum;
-import com.oblenergo.enums.StageJoinEnum;
-import com.oblenergo.enums.TypeContractEnum;
-import com.oblenergo.enums.TypeJoinEnum;
+import com.oblenergo.enums.*;
 import com.oblenergo.enums.directoryEnum.ConstitutiveDocumentsEnum;
 import com.oblenergo.model.Contract;
 import com.oblenergo.model.Rem;
@@ -26,6 +23,7 @@ public class SpecificationsController {
   private static final String REM_LIST = "rem_list";
 
   /* enums */
+  private static final String CUSTOMER_SOC_STATUS = "CustomerSocStatusEnum";
   private static final String CUSTOMER_TYPE_ENUM = "CustomerTypeEnum";
   private static final String TYPE_CONTRACT_ENUM = "TypeContractEnum";
   private static final String TYPE_JOIN_ENUM = "TypeJoinEnum";
@@ -58,6 +56,7 @@ public class SpecificationsController {
   public String getContractById(@PathVariable int id, Model model){
     model.addAttribute(REM_LIST, remServiceImpl.findAll());
     model.addAttribute(CONTRACT, contractServiceImpl.findContractById(id));
+    model.addAttribute(CUSTOMER_SOC_STATUS, CustomerSocStatusEnum.values());
     model.addAttribute(CUSTOMER_TYPE_ENUM, CustomerTypeEnum.values());
     model.addAttribute(TYPE_CONTRACT_ENUM, TypeContractEnum.values());
     model.addAttribute(TYPE_JOIN_ENUM, TypeJoinEnum.values());

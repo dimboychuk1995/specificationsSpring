@@ -45,7 +45,7 @@
                 <fieldset>
 
                   <label>Соціальний статус</label>
-                  <form:input type="text" path="" class="form-control" cssErrorClass=""/>
+                  <form:select path="customerSocStatus" items="${CustomerSocStatusEnum}" itemLabel="customerSocStatus" class="form-control" cssErrorClass=""/>
 
                   <label>Споживач</label>
                   <form:select path="customerType" items="${CustomerTypeEnum}" itemLabel="customerType" class="form-control" cssErrorClass=""/>
@@ -71,7 +71,31 @@
                   <form:input type="text" path="customer_post" class="form-control" cssErrorClass=""/>
 
                   <label>Установчий документ</label>
-                  <select items="${ConstitutiveDocumentsEnum}" itemLabel="constitutiveDocuments" class="form-control" cssErrorClass=""/>
+                  <form:select path="constitutiveDocuments" items="${ConstitutiveDocumentsEnum}" itemLabel="constitutiveDocuments" class="form-control" cssErrorClass=""/>
+
+                  <label>Розрахунковий рахунок</label>
+                  <form:input type="text" path="bank_account" class="form-control" cssErrorClass=""/>
+
+                  <label>МФО, Банк</label>
+                  <form:input type="text" path="bank_mfo" class="form-control" cssErrorClass=""/>
+
+                  <label>Ідентифікаційний номер</label>
+                  <form:input type="text" path="bank_identification_number" class="form-control" cssErrorClass=""/>
+
+                  <label>Свідоцтво платника податків</label>
+                  <form:input type="text" path="taxpayer" class="form-control" cssErrorClass=""/>
+
+                  <label>Населений пункт</label>
+                  <form:input type="text" path="customer_locality" class="form-control" cssErrorClass=""/>
+
+                  <label>Вулиця, номер будинку, квартири</label>
+                  <form:input type="text" path="customer_adress" class="form-control" cssErrorClass=""/>
+
+                  <label>Телефон</label>
+                  <form:input type="text" path="customer_telephone" class="form-control" cssErrorClass=""/>
+
+                  <label>Поштовий індекс</label>
+                  <form:input type="text" path="customer_zipcode" class="form-control" cssErrorClass=""/>
 
                 </fieldset>
               </form:form>
