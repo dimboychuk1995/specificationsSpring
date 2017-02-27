@@ -37,10 +37,9 @@ public class RemController {
   }
 
   @RequestMapping(value = "/rem/{id}",method = RequestMethod.POST)
-  public String updateRem(@Validated @ModelAttribute("rem_list") Rem rem, BindingResult bindingResult,
+  public String updateRem(@Validated Rem rem, BindingResult bindingResult,
                           Model model){
     if(bindingResult.hasErrors()){
-      model.addAttribute(REM_LIST, remServiceImpl.findAll());
       return "updateRem";
     }
 

@@ -12,7 +12,13 @@
 
 <div class="container-fluid marginTop100">
   <div class="row">
+
     <a href=<c:url value="/specifications"/> class="btn btn-default pull-down">Назад</a>
+
+    <button id="sendForm" type="submit" form="contractForm" class="btn btn-success pull-down">Зберегти
+      <span class="glyphicon glyphicon-ok"></span>
+    </button>
+
     <h3 class="pull-down col-md-12 text-center">Редагування даних по договору ТУ</h3>
   </div>
 
@@ -41,7 +47,7 @@
         <div id="customer" class="tab-pane fade in active">
           <div class="row">
             <div class="col-md-8">
-              <form:form action="" method="post" modelAttribute="contract" class="form-group pull-down">
+              <form:form id="contractForm" action="" method="post" modelAttribute="contract" class="form-group pull-down">
                 <fieldset>
 
                   <label>Соціальний статус</label>

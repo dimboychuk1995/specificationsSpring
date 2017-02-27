@@ -44,12 +44,37 @@ public class ContractServiceImpl implements ContractService {
   @Transactional
   @Override
   public void update(Contract contract) {
+
+    Contract entity = null;
+
     try{
-      Contract entity = dao.findById(contract.getId());
+      entity = dao.findById(contract.getId());
     }catch (DataAccessException dae){
       LOGGER.error("Unable to update rem");
       throw dae;
     }
+
+    entity.setCustomerSocStatus(contract.getCustomerSocStatus());
+    entity.setTypeContract(contract.getTypeContract());
+    entity.setTypeJoin(contract.getTypeJoin());
+    entity.setCustomerType(contract.getCustomerType());
+    entity.setStageJoin(contract.getStageJoin());
+    entity.setRegistrationDate(contract.getRegistrationDate());
+    entity.setfName(contract.getfName());
+    entity.setsName(contract.getsName());
+    entity.settName(contract.gettName());
+    entity.setCustomer_post(contract.getCustomer_post());
+    entity.setConstitutiveDocuments(contract.getConstitutiveDocuments());
+    entity.setBank_account(contract.getBank_account());
+    entity.setBank_mfo(contract.getBank_mfo());
+    entity.setBank_identification_number(contract.getBank_identification_number());
+    entity.setTaxpayer(contract.getTaxpayer());
+    entity.setCustomer_locality(contract.getCustomer_locality());
+    entity.setCustomer_adress(contract.getCustomer_adress());
+    entity.setCustomer_telephone(contract.getCustomer_telephone());
+    entity.setCustomer_zipcode(contract.getCustomer_zipcode());
+
+
   }
 
   @Transactional
