@@ -1,4 +1,4 @@
-package com.oblenergo.enums;
+package com.oblenergo.enums.directoryEnum;
 
 /**
  * Created by us9522 on 21.02.2017.

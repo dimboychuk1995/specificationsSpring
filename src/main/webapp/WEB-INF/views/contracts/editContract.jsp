@@ -71,7 +71,7 @@
                   <form:input type="text" path="customer_post" class="form-control" cssErrorClass=""/>
 
                   <label>Установчий документ</label>
-                  <form:select path="constitutiveDocuments" items="${ConstitutiveDocumentsEnum}" itemLabel="constitutiveDocuments" class="form-control" cssErrorClass=""/>
+                  <select items="${ConstitutiveDocumentsEnum}" itemLabel="constitutiveDocuments" class="form-control" cssErrorClass=""/>
 
                 </fieldset>
               </form:form>

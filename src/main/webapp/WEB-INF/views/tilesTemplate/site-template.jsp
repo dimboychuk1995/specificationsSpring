@@ -62,6 +62,9 @@
   <script src="<c:url value = "/resources/js/toggleBootstrap/bootstrap-toggle.min.js"/>"></script>
   <script src="<c:url value = "/resources/js/toggleBootstrap/workTypeToggle.js"/>"></script>
 
+  <!-- Multiedit for textarea -->
+  <script src="<c:url value= "/resources/dist/js/multiedit.js"/> "></script>
+
   <title>
     <tiles:insertAttribute name="title" ignore="true" />
   </title>

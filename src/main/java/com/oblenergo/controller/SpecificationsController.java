@@ -1,7 +1,11 @@
 package com.oblenergo.controller;
 
 import com.oblenergo.editor.RemEditor;
-import com.oblenergo.enums.*;
+import com.oblenergo.enums.CustomerTypeEnum;
+import com.oblenergo.enums.StageJoinEnum;
+import com.oblenergo.enums.TypeContractEnum;
+import com.oblenergo.enums.TypeJoinEnum;
+import com.oblenergo.enums.directoryEnum.ConstitutiveDocumentsEnum;
 import com.oblenergo.model.Contract;
 import com.oblenergo.model.Rem;
 import com.oblenergo.service.ContractService;

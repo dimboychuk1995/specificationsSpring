@@ -23,7 +23,7 @@ public class Contract implements Serializable {
   private String sName;
   private String tName;
   private String customer_post;
-  private ConstitutiveDocumentsEnum constitutiveDocuments = ConstitutiveDocumentsEnum.valueOf("NOTFULL");
+  private String constitutiveDocuments;
   private String bank_account;
   private String bank_mfo;
   private String bank_identification_number;
@@ -88,9 +88,8 @@ public class Contract implements Serializable {
     return customer_post;
   }
 
-  @Enumerated(EnumType.STRING)
   @Column(name = "constitutiveDocuments")
-  public ConstitutiveDocumentsEnum getConstitutiveDocuments(){ return constitutiveDocuments; }
+  public String getConstitutiveDocuments(){ return constitutiveDocuments; }
 
   @Column(name = "bank_account")
   public String getBank_account() {
@@ -176,7 +175,7 @@ public class Contract implements Serializable {
     this.customer_post = customer_post;
   }
 
-  public void setConstitutiveDocuments(ConstitutiveDocumentsEnum constitutiveDocuments) {
+  public void setConstitutiveDocuments(String constitutiveDocuments) {
     this.constitutiveDocuments = constitutiveDocuments;
   }
 
