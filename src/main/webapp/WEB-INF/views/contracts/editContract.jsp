@@ -19,6 +19,8 @@
       <span class="glyphicon glyphicon-ok"></span>
     </button>
 
+    <%--<button id="${contract.id}" type="submit" class="btn btn-danger delete">Видалити</button>--%>
+
     <h3 class="pull-down col-md-12 text-center">Редагування даних по договору ТУ</h3>
   </div>
 
