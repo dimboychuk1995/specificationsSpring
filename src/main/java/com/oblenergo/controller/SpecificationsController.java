@@ -8,6 +8,7 @@ import com.oblenergo.model.Rem;
 import com.oblenergo.service.ContractService;
 import com.oblenergo.service.RemService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -75,6 +76,16 @@ public class SpecificationsController {
     }
 
     contractServiceImpl.update(contract);
+    return "redirect:/specifications";
+  }
+
+  @RequestMapping(value = "/contract/delete/", method = RequestMethod.DELETE)
+  @ResponseStatus(HttpStatus.NO_CONTENT)
+  public String deleteContract(@PathVariable("id") int id){
+
+    System.out.println(id + " id");
+
+    contractServiceImpl.delete(id);
     return "redirect:/specifications";
   }
 
