@@ -1,4 +1,4 @@
-package com.oblenergo.enums;
+package com.oblenergo.enums.dataObjectEnums;
 
 /**
  * Created by us9522 on 14.02.2017.

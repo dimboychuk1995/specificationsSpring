@@ -1,6 +1,6 @@
 package com.oblenergo.model;
 
-import com.oblenergo.enums.*;
+import com.oblenergo.enums.customerEnums.*;
 
 import javax.persistence.*;
 import java.io.Serializable;

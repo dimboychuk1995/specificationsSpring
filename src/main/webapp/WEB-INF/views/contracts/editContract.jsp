@@ -28,7 +28,7 @@
     <div class="col-lg-2">
       <ul class="nav nav-tabs nav-stacked nav-pills">
         <li class="active"><a data-toggle="tab" href="#customer">Замовник</a></li>
-        <li><a data-toggle="tab" href="#menu1">Дані про об'єкт</a></li>
+        <li><a data-toggle="tab" href="#dataobject">Дані про об'єкт</a></li>
         <li><a data-toggle="tab" href="#menu2">Вимоги ТУ</a></li>
         <li><a data-toggle="tab" href="#menu2">Технічні умови № Договір</a></li>
         <li><a data-toggle="tab" href="#menu2">Допуск та проектування</a></li>
@@ -110,9 +110,12 @@
             </div>
           </div>
         </div>
-        <div id="menu1" class="tab-pane fade">
-          <h3>Menu 1</h3>
-          <p>Some content in menu 1.</p>
+        <div id="dataobject" class="tab-pane fade">
+          <div class="row">
+            <div class="col-md-8">
+
+            </div>
+          </div>
         </div>
         <div id="menu2" class="tab-pane fade">
           <h3>Menu 2</h3>
