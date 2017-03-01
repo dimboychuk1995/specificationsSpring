@@ -5,6 +5,7 @@ package com.oblenergo.enums.dataObjectEnums;
  */
 public enum ReasonTCEnum {
 
+  NOTFULL("-"),
   NEWCONSTRUCTION("нове будівництво"),
   MOREPOWER("збільшення потужності"),
   CHANGEPOINT("зміна точки приєднання"),

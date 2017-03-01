@@ -81,9 +81,8 @@ public class SpecificationsController {
   @RequestMapping(value = "/contract/delete/{id}", method = RequestMethod.GET)
   public String deleteContract(@Validated Contract contract){
 
-    System.out.println(contract.getId() + " id");
-
     contractServiceImpl.delete(contract.getId());
+
     return "redirect:/specifications";
   }
 
