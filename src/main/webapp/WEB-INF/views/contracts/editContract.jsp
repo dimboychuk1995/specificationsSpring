@@ -19,7 +19,7 @@
       <span class="glyphicon glyphicon-ok"></span>
     </button>
 
-    <button id="${contract.id}" type="DELETE" form="contractForm" class="btn btn-danger delete">Видалити</button>
+    <a href="<c:url value="/specifications/contract/delete/${id}"/> " class="btn btn-danger delete">Видалити</a>
 
     <h3 class="pull-down col-md-12 text-center">Редагування даних по договору ТУ</h3>
   </div>
