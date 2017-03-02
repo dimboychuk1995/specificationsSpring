@@ -124,9 +124,10 @@
                 <fieldset>
 
                   <label>Підстава видачі ТУ</label>
-                  <form:select path="reasonTC" items="${ReasonTCEnum}" itemLabel="reasonTC" class="form-control" cssErrorClass=""/>
+                  <%--<form:select path="reasonTC" items="${ReasonTCEnum}" itemLabel="reasonTC" class="form-control" cssErrorClass=""/>--%>
 
-                  <label>Підстава видачі ТУ</label>
+                  <label>Назва</label>
+                  <form:input type="text" path="object_name" class="form-control" cssErrorClass=""/>
 
                   <label>Підстава видачі ТУ</label>
 
