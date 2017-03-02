@@ -71,10 +71,17 @@
                   <form:input type="text" path="registrationDate" placeholder="click to show datepicker" id="mainDatepicker" class="form-control" cssErrorClass=""/>
 
                   <label>ПІП</label>
-                  <form:input type="text" path="sName" class="form-control" cssErrorClass=""/>
-                  <form:input type="text" path="fName" class="form-control" cssErrorClass=""/>
-                  <form:input type="text" path="tName" class="form-control" cssErrorClass=""/>
-
+                  <div class="row">
+                    <div class="col-md-3">
+                      <form:input type="text" path="sName" class="form-control" cssErrorClass=""/>
+                    </div>
+                    <div class="col-md-3">
+                      <form:input type="text" path="fName" class="form-control" cssErrorClass=""/>
+                    </div>
+                    <div class="col-md-3">
+                      <form:input type="text" path="tName" class="form-control" cssErrorClass=""/>
+                    </div>
+                  </div>
                   <label>Посада керівника</label>
                   <form:input type="text" path="customer_post" class="form-control" cssErrorClass=""/>
 
@@ -117,6 +124,7 @@
                 <fieldset>
 
                   <label>Підстава видачі ТУ</label>
+                  <form:select path="reasonTC" items="${ReasonTCEnum}" itemLabel="reasonTC" class="form-control" cssErrorClass=""/>
 
                   <label>Підстава видачі ТУ</label>
 

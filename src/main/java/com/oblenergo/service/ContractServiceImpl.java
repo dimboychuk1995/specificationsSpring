@@ -54,6 +54,7 @@ public class ContractServiceImpl implements ContractService {
       throw dae;
     }
 
+    //customer
     entity.setCustomerSocStatus(contract.getCustomerSocStatus());
     entity.setTypeContract(contract.getTypeContract());
     entity.setTypeJoin(contract.getTypeJoin());
@@ -74,6 +75,8 @@ public class ContractServiceImpl implements ContractService {
     entity.setCustomer_telephone(contract.getCustomer_telephone());
     entity.setCustomer_zipcode(contract.getCustomer_zipcode());
 
+    //dataobject
+    entity.setReasonTC(contract.getReasonTC());
 
   }
 
