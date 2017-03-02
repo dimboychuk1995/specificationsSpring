@@ -181,6 +181,183 @@ public class Contract implements Serializable {
   }
 
 
+  //dataobject getters
+  @Enumerated(EnumType.STRING)
+  @Column(name = "reasonTC")
+  public ReasonTCEnum getReasonTC() {
+    return reasonTC;
+  }
+
+  @Column(name = "object_name")
+  public String getObject_name() {
+    return object_name;
+  }
+
+  @Column(name = "functional_target")
+  public String getFunctional_target() {
+    return functional_target;
+  }
+
+  @Column(name = "name_locality")
+  public String getName_locality() {
+    return name_locality;
+  }
+
+  @Column(name = "object_adress")
+  public String getObject_adress() {
+    return object_adress;
+  }
+
+  @Column(name = "object_zipcode")
+  public String getObject_zipcode() {
+    return object_zipcode;
+  }
+
+  @Column(name = "executorCompany")
+  public ExecutorCompanyEnum getExecutorCompany() {
+    return executorCompany;
+  }
+
+  @Column(name = "connection_price")
+  public String getConnection_price() {
+    return connection_price;
+  }
+
+  @Column(name = "tc_pay_date")
+  public String getTc_pay_date() {
+    return tc_pay_date;
+  }
+
+  @Column(name = "date_intro_eksp")
+  public String getDate_intro_eksp() {
+    return date_intro_eksp;
+  }
+
+  @Column(name = "price_visit_obj")
+  public String getPrice_visit_obj() {
+    return price_visit_obj;
+  }
+
+  @Column(name = "geo_cord_1")
+  public String getGeo_cord_1() {
+    return geo_cord_1;
+  }
+
+  @Column(name = "geo_cord_2")
+  public String getGeo_cord_2() {
+    return geo_cord_2;
+  }
+
+  @Column(name = "connection_treaty_number")
+  public String getConnection_treaty_number() {
+    return connection_treaty_number;
+  }
+
+  @Column(name = "point_zab_power")
+  public String getPoint_zab_power() {
+    return point_zab_power;
+  }
+
+  @Column(name = "reliabylity_class_1_val")
+  public String getReliabylity_class_1_val() {
+    return reliabylity_class_1_val;
+  }
+
+  @Column(name = "reliabylity_class_2_val")
+  public String getReliabylity_class_2_val() {
+    return reliabylity_class_2_val;
+  }
+
+  @Column(name = "reliabylity_class_3_val")
+  public String getReliabylity_class_3_val() {
+    return reliabylity_class_3_val;
+  }
+
+  @Column(name = "reliabylity_class_1_val_old")
+  public String getReliabylity_class_1_val_old() {
+    return reliabylity_class_1_val_old;
+  }
+
+  @Column(name = "reliabylity_class_2_val_old")
+  public String getReliabylity_class_2_val_old() {
+    return reliabylity_class_2_val_old;
+  }
+
+  @Column(name = "reliabylity_class_3_val_old")
+  public String getReliabylity_class_3_val_old() {
+    return reliabylity_class_3_val_old;
+  }
+
+  @Column(name = "reliabylity_class_1_val_build")
+  public String getReliabylity_class_1_val_build() {
+    return reliabylity_class_1_val_build;
+  }
+
+  @Column(name = "reliabylity_class_2_val_build")
+  public String getReliabylity_class_2_val_build() {
+    return reliabylity_class_2_val_build;
+  }
+
+  @Column(name = "reliabylity_class_3_val_build")
+  public String getReliabylity_class_3_val_build() {
+    return reliabylity_class_3_val_build;
+  }
+
+  @Column(name = "voltage")
+  public String getVoltage() {
+    return voltage;
+  }
+
+  @Column(name = "request_power")
+  public String getRequest_power() {
+    return request_power;
+  }
+
+  @Column(name = "build_strum_power")
+  public String getBuild_strum_power() {
+    return build_strum_power;
+  }
+
+  @Column(name = "power_for_electric_devices")
+  public String getPower_for_electric_devices() {
+    return power_for_electric_devices;
+  }
+
+  @Column(name = "power_for_environmental_reservation")
+  public String getPower_for_environmental_reservation() {
+    return power_for_environmental_reservation;
+  }
+
+  @Column(name = "power_for_emergency_reservation")
+  public String getPower_for_emergency_reservation() {
+    return power_for_emergency_reservation;
+  }
+
+  @Column(name = "power_for_technology_reservation")
+  public String getPower_for_technology_reservation() {
+    return power_for_technology_reservation;
+  }
+
+  @Column(name = "power_boil")
+  public String getPower_boil() {
+    return power_boil;
+  }
+
+  @Column(name = "power_plit")
+  public String getPower_plit() {
+    return power_plit;
+  }
+
+  @Column(name = "power_old")
+  public String getPower_old() {
+    return power_old;
+  }
+
+  @Column(name = "nom_data_dog")
+  public String getNom_data_dog() {
+    return nom_data_dog;
+  }
+
   //customer setters
   public void setId(int id) {
     this.id = id;

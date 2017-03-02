@@ -15,7 +15,7 @@
 
     <a href=<c:url value="/specifications"/> class="btn btn-default pull-down">Назад</a>
 
-    <button id="sendForm" type="submit" form="contractForm" class="btn btn-success pull-down">Зберегти
+    <button id="sendForm" type="submit" form="contractFormCustomer" class="btn btn-success pull-down">Зберегти
       <span class="glyphicon glyphicon-ok"></span>
     </button>
 
@@ -49,7 +49,7 @@
         <div id="customer" class="tab-pane fade in active">
           <div class="row">
             <div class="col-md-8">
-              <form:form id="contractForm" action="" method="post" modelAttribute="contract" class="form-group pull-down">
+              <form:form id="contractFormCustomer" action="" method="post" modelAttribute="contract" class="form-group pull-down">
                 <fieldset>
 
                   <label>Соціальний статус</label>
@@ -113,7 +113,61 @@
         <div id="dataobject" class="tab-pane fade">
           <div class="row">
             <div class="col-md-8">
+              <form:form id="contractFormCustomer" action="" method="post" modelAttribute="contract" class="form-group pull-down">
+                <fieldset>
 
+                  <label>Підстава видачі ТУ</label>
+
+                  <label>Підстава видачі ТУ</label>
+
+                  <label>Підстава видачі ТУ</label>
+
+                  <label>Підстава видачі ТУ</label>
+
+                  <label>Підстава видачі ТУ</label>
+
+                  <label>Підстава видачі ТУ</label>
+
+                  <label>Підстава видачі ТУ</label>
+
+                  <label>Підстава видачі ТУ</label>
+
+                  <label>Підстава видачі ТУ</label>
+
+                  <label>Підстава видачі ТУ</label>
+
+                  <label>Підстава видачі ТУ</label>
+
+                  <label>Підстава видачі ТУ</label>
+
+                  <label>Підстава видачі ТУ</label>
+
+                  <label>Підстава видачі ТУ</label>
+
+                  <label>Підстава видачі ТУ</label>
+
+                  <label>Підстава видачі ТУ</label>
+
+                  <label>Підстава видачі ТУ</label>
+
+                  <label>Підстава видачі ТУ</label>
+
+                  <label>Підстава видачі ТУ</label>
+
+                  <label>Підстава видачі ТУ</label>
+
+                  <label>Підстава видачі ТУ</label>
+
+                  <label>Підстава видачі ТУ</label>
+
+                  <label>Підстава видачі ТУ</label>
+
+                  <label>Підстава видачі ТУ</label>
+
+                  <label>Підстава видачі ТУ</label>
+
+                </fieldset>
+              </form:form>
             </div>
           </div>
         </div>
