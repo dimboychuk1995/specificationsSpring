@@ -28,7 +28,7 @@ public class ContractDaoImpl extends AbstractDao<Integer, Contract> implements C
   }
 
   @Override
-  public void save(Contract contract) {
+   public void save(Contract contract) {
     persist(contract);
   }
 
