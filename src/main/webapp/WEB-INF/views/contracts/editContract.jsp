@@ -123,57 +123,76 @@
               <form:form id="contractFormCustomer" action="" method="post" modelAttribute="contract" class="form-group pull-down">
                 <fieldset>
 
-                  <label>Підстава видачі ТУ</label>
+                  <%--<label>Підстава видачі ТУ</label>--%>
                   <%--<form:select path="reasonTC" items="${ReasonTCEnum}" itemLabel="reasonTC" class="form-control" cssErrorClass=""/>--%>
 
                   <label>Назва</label>
                   <form:input type="text" path="object_name" class="form-control" cssErrorClass=""/>
 
-                  <label>Підстава видачі ТУ</label>
+                  <label>Функціональне призначення об'єкта</label>
+                  <form:input type="text" path="functional_target" class="form-control" cssErrorClass=""/>
 
-                  <label>Підстава видачі ТУ</label>
+                  <label>Назва населеного пункту</label>
+                  <form:input type="text" path="name_locality" class="form-control" cssErrorClass=""/>
 
-                  <label>Підстава видачі ТУ</label>
+                  <label>Адреса</label>
+                  <form:input type="text" path="name_locality" class="form-control" cssErrorClass=""/>
 
-                  <label>Підстава видачі ТУ</label>
+                  <label>Поштовий індекс</label>
+                  <form:input type="text" path="name_locality" class="form-control" cssErrorClass=""/>
 
-                  <label>Підстава видачі ТУ</label>
+                  <label>Розробник ТУ</label>
+                  <form:input type="text" path="name_locality" class="form-control" cssErrorClass=""/>
 
-                  <label>Підстава видачі ТУ</label>
+                  <label>Сума за ТУ, грн</label>
+                  <form:input type="text" path="name_locality" class="form-control" cssErrorClass=""/>
 
-                  <label>Підстава видачі ТУ</label>
+                  <label>Дата оплати</label>
+                  <form:input type="text" path="name_locality" class="form-control" cssErrorClass=""/>
 
-                  <label>Підстава видачі ТУ</label>
+                  <label>Дата введення в експлуатацію</label>
+                  <form:input type="text" path="name_locality" class="form-control" cssErrorClass=""/>
 
-                  <label>Підстава видачі ТУ</label>
+                  <label>Вартість виїзду на об*єкт (без ПДВ), грн</label>
+                  <form:input type="text" path="name_locality" class="form-control" cssErrorClass=""/>
 
-                  <label>Підстава видачі ТУ</label>
+                  <label>Географічні координати точки підлючення</label>
+                  <form:input type="text" path="name_locality" class="form-control" cssErrorClass=""/>
 
-                  <label>Підстава видачі ТУ</label>
+                  <label>Географічні координати точки забезпечення потужності</label>
 
-                  <label>Підстава видачі ТУ</label>
+                  <label>Точка приєднання</label>
 
-                  <label>Підстава видачі ТУ</label>
+                  <label>Точка забезпечення потужності</label>
 
-                  <label>Підстава видачі ТУ</label>
+                  <label>Категорія надійності</label>
 
-                  <label>Підстава видачі ТУ</label>
+                  <label>Категорія надійності(існуюча потужність)</label>
 
-                  <label>Підстава видачі ТУ</label>
+                  <label>Категорія надійності будівельних струмоприймачів</label>
 
-                  <label>Підстава видачі ТУ</label>
+                  <label>Напруга</label>
 
-                  <label>Підстава видачі ТУ</label>
+                  <label>Заявлена потужність, кВт</label>
 
-                  <label>Підстава видачі ТУ</label>
+                  <label>Потужність будівельних струмоприймачів</label>
+                  <label>В тому числі для</label>
 
-                  <label>Підстава видачі ТУ</label>
+                  <label>опалення приміщень:</label>
 
-                  <label>Підстава видачі ТУ</label>
+                  <label>екологічної броні:</label>
 
-                  <label>Підстава видачі ТУ</label>
+                  <label>аварійної броні:</label>
 
-                  <label>Підстава видачі ТУ</label>
+                  <label>технологічної броні:</label>
+
+                  <label>електричний підігрів води</label>
+
+                  <label>стаціонарні електричні плити</label>
+
+                  <label>існуюча потужність</label>
+
+                  <label>Договір про постачання(користування) е/е № та дата</label>
 
                 </fieldset>
               </form:form>
