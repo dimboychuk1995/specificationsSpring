@@ -77,6 +77,42 @@ public class ContractServiceImpl implements ContractService {
 
     //dataobject
     entity.setReasonTC(contract.getReasonTC());
+    entity.setObject_name(contract.getObject_name());
+    entity.setFunctional_target(contract.getFunctional_target());
+    entity.setName_locality(contract.getName_locality());
+    entity.setObject_adress(contract.getObject_adress());
+    entity.setObject_zipcode(contract.getObject_zipcode());
+    entity.setExecutorCompany(contract.getExecutorCompany());
+    entity.setConnection_price(contract.getConnection_price());
+    entity.setTc_pay_date(contract.getTc_pay_date());
+    entity.setDate_intro_eksp(contract.getDate_intro_eksp());
+    entity.setPrice_visit_obj(contract.getPrice_visit_obj());
+    entity.setGeo_cord_1(contract.getGeo_cord_1());
+    entity.setGeo_cord_2(contract.getGeo_cord_2());
+    entity.setConnection_treaty_number(contract.getConnection_treaty_number());
+    entity.setPoint_zab_power(contract.getPoint_zab_power());
+    entity.setReliabylity_class_1_val(contract.getReliabylity_class_1_val());
+    entity.setReliabylity_class_2_val(contract.getReliabylity_class_2_val());
+    entity.setReliabylity_class_3_val(contract.getReliabylity_class_3_val());
+    entity.setReliabylity_class_1_val_old(contract.getReliabylity_class_1_val_old());
+    entity.setReliabylity_class_2_val_old(contract.getReliabylity_class_2_val_old());
+    entity.setReliabylity_class_3_val_old(contract.getReliabylity_class_2_val_old());
+    entity.setReliabylity_class_1_val_build(contract.getReliabylity_class_1_val_build());
+    entity.setReliabylity_class_2_val_build(contract.getReliabylity_class_2_val_build());
+    entity.setReliabylity_class_3_val_build(contract.getReliabylity_class_3_val_build());
+    entity.setVoltage(contract.getVoltage());
+    entity.setRequest_power(contract.getRequest_power());
+    entity.setBuild_strum_power(contract.getBuild_strum_power());
+    entity.setPower_for_electric_devices(contract.getPower_for_electric_devices());
+    entity.setPower_for_environmental_reservation(contract.getPower_for_environmental_reservation());
+    entity.setPower_for_emergency_reservation(contract.getPower_for_emergency_reservation());
+    entity.setPower_for_technology_reservation(contract.getPower_for_technology_reservation());
+    entity.setPower_boil(contract.getPower_boil());
+    entity.setPower_plit(contract.getPower_plit());
+    entity.setPower_old(contract.getPower_old());
+    entity.setNom_data_dog(contract.getNom_data_dog());
+
+
 
   }
 

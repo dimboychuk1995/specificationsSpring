@@ -11,7 +11,7 @@ Thumbs.db
 # Build Artifacts
 
 .gradle/
-build/
+build/git
 target/
 bin/
 lib/
@@ -38,3 +38,4 @@ log.txt
 nb-configuration.xml
 sapclient.properties
 sap.wsdl
+src/test/
